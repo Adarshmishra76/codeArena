@@ -1,0 +1,36 @@
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* ---------------------------------------------------------------- */
+/* CodeArena design tokens                                          */
+/* Dark, developer-focused SaaS palette — intentionally not LeetCode */
+/* ---------------------------------------------------------------- */
+:root {
+  --ca-bg: #0a0c10;
+  --ca-bg-elevated: #0e1116;
+  --ca-surface: #12151b;
+  --ca-surface-hover: #171b23;
+  --ca-surface-active: #1b2029;
+  --ca-border: #21252e;
+  --ca-border-soft: #191c24;
+
+  --ca-text-primary: #e7e9ee;
+  --ca-text-secondary: #8b93a3;
+  --ca-text-muted: #565d6c;
+
+  --ca-accent: #5b8def;
+  --ca-accent-soft: #5b8def1a;
+  --ca-accent-border: #5b8def40;
+
+  --ca-easy: #34d399;
+  --ca-easy-soft: #34d39917;
+  --ca-medium: #f0b429;
+  --ca-medium-soft: #f0b42917;
+  --ca-hard: #f0616d;
+  --ca-hard-soft: #f0616d17;
+}
+
+.ca-font-display {
+  font-family: ui-monospace, "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+}
