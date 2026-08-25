@@ -26,6 +26,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+app.get("/", (req, res) => {
+    res.send("CodeArena Backend is running 🚀");
+    
 app.use('/user', authRouter);
 app.use('/problem', problemRouter);
 app.use('/submission', submitRouter);
