@@ -13,10 +13,13 @@ const videoRouter = require("./routes/videoCreator");
 
 const cors = require('cors');
 
+
 app.use(cors({
-    origin: 'http://localhost:5173',
-    'https://codearena03.netlify.app',
-    credentials: true 
+    origin: [
+        "http://localhost:5173",
+        "https://codearena03.netlify.app"
+    ],
+    credentials: true
 }));
 
 app.use(express.json());
