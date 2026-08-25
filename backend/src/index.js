@@ -13,15 +13,25 @@ const videoRouter = require("./routes/videoCreator");
 
 const cors = require('cors');
 
+
 app.use(cors({
-    origin: 'http://localhost:5173',
-    credentials: true 
+    origin: [
+        "http://localhost:5173",
+        "https://codearena03.netlify.app"
+    ],
+    credentials: true
 }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+
+app.get("/", (req, res) => {
+    res.send("CodeArena Backend is running 🚀");
+});
+
+    
 app.use('/user', authRouter);
 app.use('/problem', problemRouter);
 app.use('/submission', submitRouter);
